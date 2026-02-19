@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1 class="main-title">🌾 Agri Recommendation System</h1>
+<p class="subtitle">AI Powered Smart Farming Solution</p>
+
+<div class="square-button-group">
+
+    <a href="/crop" class="square-btn crop-square">
+        <div class="icon">🌱</div>
+        <div class="btn-title">Crop Recommendation</div>
+        <div class="btn-desc">Get best crop suggestion</div>
+    </a>
+
+    <a href="/fertilizer" class="square-btn fert-square">
+        <div class="icon">🌿</div>
+        <div class="btn-title">Fertilizer Recommendation</div>
+        <div class="btn-desc">Find optimal fertilizer</div>
+    </a>
+
+</div>
+{% endblock %}
