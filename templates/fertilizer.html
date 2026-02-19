@@ -59,9 +59,12 @@
         <button type="submit">Predict Fertilizer</button>
     </form>
 
-    {% if fertilizer_result %}
+    {% if fertilizer_results %}
     <div class="result-fertilizer">
-        🌿 Recommended Fertilizer: {{ fertilizer_result }}
+        <h3>🌿 Fertilizer Recommendations</h3>
+        <p>🥇 {{ fertilizer_results[0][0] }} ({{ fertilizer_results[0][1] }}%)</p>
+        <p>🥈 {{ fertilizer_results[1][0] }} ({{ fertilizer_results[1][1] }}%)</p>
+        <p>🥉 {{ fertilizer_results[2][0] }} ({{ fertilizer_results[2][1] }}%)</p>
     </div>
     {% endif %}
 

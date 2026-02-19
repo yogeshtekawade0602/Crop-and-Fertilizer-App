@@ -52,9 +52,12 @@
         <button type="submit">Predict Crop</button>
     </form>
 
-    {% if crop_result %}
+    {% if crop_results %}
     <div class="result-crop">
-        🌾 Recommended Crop: {{ crop_result }}
+        <h3>🌾 Crop Recommendations</h3>
+        <p>🥇 {{ crop_results[0][0] }} ({{ crop_results[0][1] }}%)</p>
+        <p>🥈 {{ crop_results[1][0] }} ({{ crop_results[1][1] }}%)</p>
+        <p>🥉 {{ crop_results[2][0] }} ({{ crop_results[2][1] }}%)</p>
     </div>
     {% endif %}
 
